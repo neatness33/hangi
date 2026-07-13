@@ -965,6 +965,87 @@ button {
   font-size: 0.8rem;
 }
 
+/* ========== Article / landing page ========== */
+.article-page {
+  padding: 2rem 0 3.5rem;
+}
+
+.breadcrumb {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb a {
+  color: var(--text-secondary);
+}
+
+.breadcrumb a:hover {
+  color: var(--text-primary);
+}
+
+.article-hero {
+  margin-bottom: 2rem;
+  max-width: 720px;
+}
+
+.article-lead {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.article-body {
+  max-width: 720px;
+}
+
+.article-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.article-checklist li {
+  position: relative;
+  padding: 0.45rem 0 0.45rem 1.4rem;
+  color: var(--text-secondary);
+}
+
+.article-checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent-hover);
+  font-weight: 700;
+}
+
+.article-cta {
+  margin-top: 2.5rem;
+  padding: 1.75rem;
+  text-align: center;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-cta-lg {
+  padding: 0.95rem 1.6rem;
+  font-size: 1.05rem;
+}
+
+.article-cta-note {
+  margin: 1rem 0 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .btn-cta-lg {
+    width: 100%;
+  }
+}
+
 /* ========== Responsive ========== */
 @media (max-width: 768px) {
   .menu-toggle {
