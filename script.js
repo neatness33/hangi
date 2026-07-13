@@ -6,217 +6,129 @@
  */
 
 /* ========================================
-   FİRMA VERİLERİ — Kolayca düzenlenebilir
+   FİRMA VERİLERİ
+   Yeni firma eklemek için aşağıya aynı yapıda
+   bir nesne kopyalayıp name / logo / website yazın.
    ======================================== */
 const providers = [
   {
-    name: "Firma Adı 1",
-    logo: "https://example.com/logo1.png",
-    slogan: "Firma sloganı buraya gelecek",
-    description: "Firma hakkında kısa açıklama buraya gelecek.",
-    filmReview: "Film arşivi değerlendirmesi buraya gelecek.",
-    seriesReview: "Dizi arşivi değerlendirmesi buraya gelecek.",
-    liveReview: "Canlı yayın değerlendirmesi buraya gelecek.",
+    name: "AndroTurk IPTV",
+    logo: "https://androturkiptv3.com/Public/uploads/1796395742_Ba%C5%9Fl%C4%B1ks%C4%B1z-3.png",
+    slogan: "",
+    description: "AndroTurk IPTV hizmet sayfası.",
+    filmReview: "Henüz değerlendirilmedi.",
+    seriesReview: "Henüz değerlendirilmedi.",
+    liveReview: "Henüz değerlendirilmedi.",
     devices: ["Smart TV", "Android TV", "Telefon", "Bilgisayar"],
-    pros: [
-      "Artı özellik 1",
-      "Artı özellik 2"
-    ],
-    cons: [
-      "Eksi özellik 1",
-      "Eksi özellik 2"
-    ],
+    pros: [],
+    cons: [],
     lastChecked: "Henüz kontrol edilmedi",
-    website: "https://example.com",
+    website: "https://androturkiptv3.com/izle",
     sponsored: false
   },
   {
-    name: "Firma Adı 2",
-    logo: "https://example.com/logo2.png",
-    slogan: "Firma sloganı buraya gelecek",
-    description: "Firma hakkında kısa açıklama buraya gelecek.",
-    filmReview: "Film arşivi değerlendirmesi buraya gelecek.",
-    seriesReview: "Dizi arşivi değerlendirmesi buraya gelecek.",
-    liveReview: "Canlı yayın değerlendirmesi buraya gelecek.",
+    name: "Guek IPTV",
+    logo: "https://guekiptvhd82.com/assets/logo.png",
+    slogan: "",
+    description: "Guek IPTV resmi sitesi.",
+    filmReview: "Henüz değerlendirilmedi.",
+    seriesReview: "Henüz değerlendirilmedi.",
+    liveReview: "Henüz değerlendirilmedi.",
     devices: ["Smart TV", "Android TV", "Telefon", "Bilgisayar"],
-    pros: [
-      "Artı özellik 1",
-      "Artı özellik 2"
-    ],
-    cons: [
-      "Eksi özellik 1",
-      "Eksi özellik 2"
-    ],
+    pros: [],
+    cons: [],
     lastChecked: "Henüz kontrol edilmedi",
-    website: "https://example.com",
+    website: "https://guekiptvhd82.com/",
     sponsored: false
   },
   {
-    name: "Firma Adı 3",
-    logo: "https://example.com/logo3.png",
-    slogan: "Firma sloganı buraya gelecek",
-    description: "Firma hakkında kısa açıklama buraya gelecek.",
-    filmReview: "Film arşivi değerlendirmesi buraya gelecek.",
-    seriesReview: "Dizi arşivi değerlendirmesi buraya gelecek.",
-    liveReview: "Canlı yayın değerlendirmesi buraya gelecek.",
+    name: "Totem IPTV Server",
+    logo: "https://totemiptvplus.com/assets/images/logo.png",
+    slogan: "",
+    description: "Totem IPTV Server resmi sitesi.",
+    filmReview: "Henüz değerlendirilmedi.",
+    seriesReview: "Henüz değerlendirilmedi.",
+    liveReview: "Henüz değerlendirilmedi.",
     devices: ["Smart TV", "Android TV", "Telefon", "Bilgisayar"],
-    pros: [
-      "Artı özellik 1",
-      "Artı özellik 2"
-    ],
-    cons: [
-      "Eksi özellik 1",
-      "Eksi özellik 2"
-    ],
+    pros: [],
+    cons: [],
     lastChecked: "Henüz kontrol edilmedi",
-    website: "https://example.com",
+    website: "https://totemiptvplus.com/",
     sponsored: false
   },
   {
-    name: "Firma Adı 4",
-    logo: "https://example.com/logo4.png",
-    slogan: "Firma sloganı buraya gelecek",
-    description: "Firma hakkında kısa açıklama buraya gelecek.",
-    filmReview: "Film arşivi değerlendirmesi buraya gelecek.",
-    seriesReview: "Dizi arşivi değerlendirmesi buraya gelecek.",
-    liveReview: "Canlı yayın değerlendirmesi buraya gelecek.",
+    name: "Selçuk IPTV",
+    logo: "https://i.ibb.co/wNFhy7c8/content-removebg-preview.png",
+    slogan: "",
+    description: "Selçuk IPTV paketler sayfası.",
+    filmReview: "Henüz değerlendirilmedi.",
+    seriesReview: "Henüz değerlendirilmedi.",
+    liveReview: "Henüz değerlendirilmedi.",
     devices: ["Smart TV", "Android TV", "Telefon", "Bilgisayar"],
-    pros: [
-      "Artı özellik 1",
-      "Artı özellik 2"
-    ],
-    cons: [
-      "Eksi özellik 1",
-      "Eksi özellik 2"
-    ],
+    pros: [],
+    cons: [],
     lastChecked: "Henüz kontrol edilmedi",
-    website: "https://example.com",
+    website: "https://selcukpanel5.com/paketlerimiz",
     sponsored: false
   },
   {
-    name: "Firma Adı 5",
-    logo: "https://example.com/logo5.png",
-    slogan: "Firma sloganı buraya gelecek",
-    description: "Firma hakkında kısa açıklama buraya gelecek.",
-    filmReview: "Film arşivi değerlendirmesi buraya gelecek.",
-    seriesReview: "Dizi arşivi değerlendirmesi buraya gelecek.",
-    liveReview: "Canlı yayın değerlendirmesi buraya gelecek.",
+    name: "Azure IPTV",
+    logo: "https://www.azureiptv3.site/assets/media/logo.svg",
+    slogan: "",
+    description: "Azure IPTV resmi sitesi.",
+    filmReview: "Henüz değerlendirilmedi.",
+    seriesReview: "Henüz değerlendirilmedi.",
+    liveReview: "Henüz değerlendirilmedi.",
     devices: ["Smart TV", "Android TV", "Telefon", "Bilgisayar"],
-    pros: [
-      "Artı özellik 1",
-      "Artı özellik 2"
-    ],
-    cons: [
-      "Eksi özellik 1",
-      "Eksi özellik 2"
-    ],
+    pros: [],
+    cons: [],
     lastChecked: "Henüz kontrol edilmedi",
-    website: "https://example.com",
+    website: "https://www.azureiptv3.site/",
     sponsored: false
   },
   {
-    name: "Firma Adı 6",
-    logo: "https://example.com/logo6.png",
-    slogan: "Firma sloganı buraya gelecek",
-    description: "Firma hakkında kısa açıklama buraya gelecek.",
-    filmReview: "Film arşivi değerlendirmesi buraya gelecek.",
-    seriesReview: "Dizi arşivi değerlendirmesi buraya gelecek.",
-    liveReview: "Canlı yayın değerlendirmesi buraya gelecek.",
+    name: "Alfa IPTV",
+    logo: "https://alfaiptvturkiye.one/wp-content/uploads/2024/11/alfaiptv-340x57-1.webp",
+    slogan: "",
+    description: "Alfa IPTV Türkiye.",
+    filmReview: "Henüz değerlendirilmedi.",
+    seriesReview: "Henüz değerlendirilmedi.",
+    liveReview: "Henüz değerlendirilmedi.",
     devices: ["Smart TV", "Android TV", "Telefon", "Bilgisayar"],
-    pros: [
-      "Artı özellik 1",
-      "Artı özellik 2"
-    ],
-    cons: [
-      "Eksi özellik 1",
-      "Eksi özellik 2"
-    ],
+    pros: [],
+    cons: [],
     lastChecked: "Henüz kontrol edilmedi",
-    website: "https://example.com",
+    website: "https://alfaiptvturkiye.one/",
     sponsored: false
   },
   {
-    name: "Firma Adı 7",
-    logo: "https://example.com/logo7.png",
-    slogan: "Firma sloganı buraya gelecek",
-    description: "Firma hakkında kısa açıklama buraya gelecek.",
-    filmReview: "Film arşivi değerlendirmesi buraya gelecek.",
-    seriesReview: "Dizi arşivi değerlendirmesi buraya gelecek.",
-    liveReview: "Canlı yayın değerlendirmesi buraya gelecek.",
+    name: "Germany IPTV",
+    logo: "",
+    slogan: "",
+    description: "Germany IPTV resmi sitesi.",
+    filmReview: "Henüz değerlendirilmedi.",
+    seriesReview: "Henüz değerlendirilmedi.",
+    liveReview: "Henüz değerlendirilmedi.",
     devices: ["Smart TV", "Android TV", "Telefon", "Bilgisayar"],
-    pros: [
-      "Artı özellik 1",
-      "Artı özellik 2"
-    ],
-    cons: [
-      "Eksi özellik 1",
-      "Eksi özellik 2"
-    ],
+    pros: [],
+    cons: [],
     lastChecked: "Henüz kontrol edilmedi",
-    website: "https://example.com",
+    website: "https://germanypremium32.com/",
     sponsored: false
   },
   {
-    name: "Firma Adı 8",
-    logo: "https://example.com/logo8.png",
-    slogan: "Firma sloganı buraya gelecek",
-    description: "Firma hakkında kısa açıklama buraya gelecek.",
-    filmReview: "Film arşivi değerlendirmesi buraya gelecek.",
-    seriesReview: "Dizi arşivi değerlendirmesi buraya gelecek.",
-    liveReview: "Canlı yayın değerlendirmesi buraya gelecek.",
+    name: "Atlas IPTV",
+    logo: "https://files.sikayetvar.com/lg/cmp/27/271052.png?1679322100",
+    slogan: "",
+    description: "Atlas IPTV resmi sitesi.",
+    filmReview: "Henüz değerlendirilmedi.",
+    seriesReview: "Henüz değerlendirilmedi.",
+    liveReview: "Henüz değerlendirilmedi.",
     devices: ["Smart TV", "Android TV", "Telefon", "Bilgisayar"],
-    pros: [
-      "Artı özellik 1",
-      "Artı özellik 2"
-    ],
-    cons: [
-      "Eksi özellik 1",
-      "Eksi özellik 2"
-    ],
+    pros: [],
+    cons: [],
     lastChecked: "Henüz kontrol edilmedi",
-    website: "https://example.com",
-    sponsored: false
-  },
-  {
-    name: "Firma Adı 9",
-    logo: "https://example.com/logo9.png",
-    slogan: "Firma sloganı buraya gelecek",
-    description: "Firma hakkında kısa açıklama buraya gelecek.",
-    filmReview: "Film arşivi değerlendirmesi buraya gelecek.",
-    seriesReview: "Dizi arşivi değerlendirmesi buraya gelecek.",
-    liveReview: "Canlı yayın değerlendirmesi buraya gelecek.",
-    devices: ["Smart TV", "Android TV", "Telefon", "Bilgisayar"],
-    pros: [
-      "Artı özellik 1",
-      "Artı özellik 2"
-    ],
-    cons: [
-      "Eksi özellik 1",
-      "Eksi özellik 2"
-    ],
-    lastChecked: "Henüz kontrol edilmedi",
-    website: "https://example.com",
-    sponsored: false
-  },
-  {
-    name: "Firma Adı 10",
-    logo: "https://example.com/logo10.png",
-    slogan: "Firma sloganı buraya gelecek",
-    description: "Firma hakkında kısa açıklama buraya gelecek.",
-    filmReview: "Film arşivi değerlendirmesi buraya gelecek.",
-    seriesReview: "Dizi arşivi değerlendirmesi buraya gelecek.",
-    liveReview: "Canlı yayın değerlendirmesi buraya gelecek.",
-    devices: ["Smart TV", "Android TV", "Telefon", "Bilgisayar"],
-    pros: [
-      "Artı özellik 1",
-      "Artı özellik 2"
-    ],
-    cons: [
-      "Eksi özellik 1",
-      "Eksi özellik 2"
-    ],
-    lastChecked: "Henüz kontrol edilmedi",
-    website: "https://example.com",
+    website: "https://www.atlaspremium7.info/",
     sponsored: false
   }
 ];
@@ -308,6 +220,7 @@ function createProviderCard(provider, index) {
   const detailsId = "provider-details-" + index;
   const initials = escapeHtml(getInitials(provider.name));
   const rel = getRelAttribute(provider.sponsored);
+  const hasLogo = Boolean(provider.logo && String(provider.logo).trim());
 
   const devicesHtml = (provider.devices || [])
     .map(function (d) {
@@ -315,13 +228,18 @@ function createProviderCard(provider, index) {
     })
     .join("");
 
-  const prosHtml = (provider.pros || [])
+  const prosList =
+    provider.pros && provider.pros.length ? provider.pros : ["Henüz eklenmedi"];
+  const consList =
+    provider.cons && provider.cons.length ? provider.cons : ["Henüz eklenmedi"];
+
+  const prosHtml = prosList
     .map(function (item) {
       return "<li>" + escapeHtml(item) + "</li>";
     })
     .join("");
 
-  const consHtml = (provider.cons || [])
+  const consHtml = consList
     .map(function (item) {
       return "<li>" + escapeHtml(item) + "</li>";
     })
@@ -331,14 +249,24 @@ function createProviderCard(provider, index) {
     ? '<span class="sponsored-badge">SPONSORLU</span>'
     : "";
 
+  const sloganHtml = provider.slogan
+    ? '<p class="provider-slogan">' + escapeHtml(provider.slogan) + "</p>"
+    : "";
+
+  const logoHtml = hasLogo
+    ? '<img class="provider-logo" src="' +
+      escapeHtml(provider.logo) +
+      '" alt="' +
+      escapeHtml(provider.name) +
+      ' logosu" width="180" height="90" loading="lazy" decoding="async">'
+    : "";
+
   card.innerHTML =
     '<div class="provider-top">' +
-    '  <div class="provider-logo-wrap">' +
-    '    <img class="provider-logo" src="' +
-    escapeHtml(provider.logo) +
-    '" alt="' +
-    escapeHtml(provider.name) +
-    ' logosu" width="180" height="90" loading="lazy" decoding="async">' +
+    '  <div class="provider-logo-wrap' +
+    (hasLogo ? "" : " has-fallback") +
+    '">' +
+    logoHtml +
     '    <div class="provider-logo-fallback" aria-hidden="true">' +
     initials +
     "</div>" +
@@ -350,9 +278,7 @@ function createProviderCard(provider, index) {
     "</h3>" +
     sponsoredBadge +
     "    </div>" +
-    '    <p class="provider-slogan">' +
-    escapeHtml(provider.slogan) +
-    "</p>" +
+    sloganHtml +
     '    <p class="provider-checked">Son kontrol: ' +
     escapeHtml(provider.lastChecked) +
     "</p>" +
