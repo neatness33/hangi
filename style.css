@@ -571,6 +571,103 @@ button {
   border-radius: var(--radius-sm);
 }
 
+.provider-rating {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.35rem 0 0.55rem;
+}
+
+.stars {
+  display: inline-flex;
+  gap: 0.1rem;
+  line-height: 1;
+}
+
+.star {
+  font-size: 1.15rem;
+}
+
+.star-full {
+  color: #f5c518;
+}
+
+.star-half {
+  color: #f5c518;
+  opacity: 0.55;
+}
+
+.star-empty {
+  color: #3d5275;
+}
+
+.rating-score {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+/* ========== WhatsApp ========== */
+.whatsapp-section {
+  padding: 0 0 3rem;
+}
+
+.whatsapp-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 1.5rem 1.75rem;
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.12), rgba(22, 35, 58, 0.9));
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.whatsapp-text {
+  flex: 1;
+  min-width: 220px;
+}
+
+.whatsapp-text h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.whatsapp-text p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.btn-whatsapp {
+  background: #25d366;
+  color: #062510;
+  border-color: #25d366;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.btn-whatsapp:hover {
+  background: #2fe574;
+  border-color: #2fe574;
+  color: #04200d;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-box {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .btn-whatsapp {
+    width: 100%;
+  }
+}
+
 .provider-slogan {
   margin: 0 0 0.5rem;
   color: var(--text-muted);

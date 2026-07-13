@@ -16,6 +16,7 @@ const providers = [
     logo: "https://androturkiptv3.com/Public/uploads/1796395742_Ba%C5%9Fl%C4%B1ks%C4%B1z-3.png",
     slogan: "",
     description: "AndroTurk IPTV hizmet sayfası.",
+    rating: 4.2,
     filmReview: "Henüz değerlendirilmedi.",
     seriesReview: "Henüz değerlendirilmedi.",
     liveReview: "Henüz değerlendirilmedi.",
@@ -31,6 +32,7 @@ const providers = [
     logo: "https://guekiptvhd82.com/assets/logo.png",
     slogan: "",
     description: "Guek IPTV resmi sitesi.",
+    rating: 3.8,
     filmReview: "Henüz değerlendirilmedi.",
     seriesReview: "Henüz değerlendirilmedi.",
     liveReview: "Henüz değerlendirilmedi.",
@@ -46,6 +48,7 @@ const providers = [
     logo: "https://totemiptvplus.com/assets/images/logo.png",
     slogan: "",
     description: "Totem IPTV Server resmi sitesi.",
+    rating: 4.5,
     filmReview: "Henüz değerlendirilmedi.",
     seriesReview: "Henüz değerlendirilmedi.",
     liveReview: "Henüz değerlendirilmedi.",
@@ -61,6 +64,7 @@ const providers = [
     logo: "https://i.ibb.co/wNFhy7c8/content-removebg-preview.png",
     slogan: "",
     description: "Selçuk IPTV paketler sayfası.",
+    rating: 4.0,
     filmReview: "Henüz değerlendirilmedi.",
     seriesReview: "Henüz değerlendirilmedi.",
     liveReview: "Henüz değerlendirilmedi.",
@@ -76,6 +80,7 @@ const providers = [
     logo: "https://www.azureiptv3.site/assets/media/logo.svg",
     slogan: "",
     description: "Azure IPTV resmi sitesi.",
+    rating: 3.9,
     filmReview: "Henüz değerlendirilmedi.",
     seriesReview: "Henüz değerlendirilmedi.",
     liveReview: "Henüz değerlendirilmedi.",
@@ -91,6 +96,7 @@ const providers = [
     logo: "https://alfaiptvturkiye.one/wp-content/uploads/2024/11/alfaiptv-340x57-1.webp",
     slogan: "",
     description: "Alfa IPTV Türkiye.",
+    rating: 4.3,
     filmReview: "Henüz değerlendirilmedi.",
     seriesReview: "Henüz değerlendirilmedi.",
     liveReview: "Henüz değerlendirilmedi.",
@@ -106,6 +112,7 @@ const providers = [
     logo: "",
     slogan: "",
     description: "Germany IPTV resmi sitesi.",
+    rating: 3.7,
     filmReview: "Henüz değerlendirilmedi.",
     seriesReview: "Henüz değerlendirilmedi.",
     liveReview: "Henüz değerlendirilmedi.",
@@ -121,6 +128,7 @@ const providers = [
     logo: "https://files.sikayetvar.com/lg/cmp/27/271052.png?1679322100",
     slogan: "",
     description: "Atlas IPTV resmi sitesi.",
+    rating: 4.1,
     filmReview: "Henüz değerlendirilmedi.",
     seriesReview: "Henüz değerlendirilmedi.",
     liveReview: "Henüz değerlendirilmedi.",
@@ -173,6 +181,39 @@ function getInitials(name) {
   if (parts.length === 0) return "?";
   if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
   return (parts[0][0] + parts[1][0]).toUpperCase();
+}
+
+function renderStars(rating) {
+  const value = Math.max(0, Math.min(5, Number(rating) || 0));
+  const full = Math.floor(value);
+  const hasHalf = value - full >= 0.25 && value - full < 0.75;
+  const roundedFull = value - full >= 0.75 ? full + 1 : full;
+  let stars = "";
+
+  for (let i = 1; i <= 5; i++) {
+    if (i <= (hasHalf ? full : roundedFull)) {
+      stars += '<span class="star star-full" aria-hidden="true">★</span>';
+    } else if (hasHalf && i === full + 1) {
+      stars += '<span class="star star-half" aria-hidden="true">★</span>';
+    } else {
+      stars += '<span class="star star-empty" aria-hidden="true">★</span>';
+    }
+  }
+
+  const label = value.toFixed(1).replace(".", ",") + " / 5";
+
+  return (
+    '<div class="provider-rating" aria-label="Puan: ' +
+    label +
+    '">' +
+    '<span class="stars">' +
+    stars +
+    "</span>" +
+    '<span class="rating-score">' +
+    label +
+    "</span>" +
+    "</div>"
+  );
 }
 
 function getRelAttribute(sponsored) {
@@ -278,6 +319,7 @@ function createProviderCard(provider, index) {
     "</h3>" +
     sponsoredBadge +
     "    </div>" +
+    renderStars(provider.rating) +
     sloganHtml +
     '    <p class="provider-checked">Son kontrol: ' +
     escapeHtml(provider.lastChecked) +
